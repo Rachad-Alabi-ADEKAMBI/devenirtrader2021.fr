@@ -1,0 +1,118 @@
+/**
+ *  -------------------------------------------------------------------------------
+ *  ( 05 ) - Footer
+ *  -------------------------------------------------------------------------------
+ *
+ *  This part contains footer and mini footer
+ *
+ *  ------
+ *
+ *  It has the following code:
+ *
+ *    |
+ *    |-->  [ 01 ] - Footer
+ *    |-->  [ 02 ] - Footer Bars
+ 
+ */
+/*  [ 01 ] - Footer
+===================== */
+#footer {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+/*  [ 02 ] - Footer Bars
+========================== */
+/* Footer Bar */
+.footer-bar {
+  padding: 100px 0;
+  background: transparent;
+}
+
+.footer-bar .fb-row + .fb-row {
+  padding-top: 50px;
+  margin-top: 50px;
+  border-top: 1px solid rgba(34, 34, 34, 0.05);
+}
+
+@media (max-width: 768px) {
+  .footer-bar .fb-row {
+    flex-direction: column;
+  }
+}
+
+/* Footer Bar 1 */
+#footer-bar-1 {
+  padding: 0;
+}
+
+#footer-bar-1 .footer-bar-wrap {
+  width: 100%;
+}
+
+#footer-bar-1.footer-bar .fb-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+@media (max-width: 768px) {
+  #footer-bar-1.footer-bar .fb-row {
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 0;
+  }
+}
+
+#footer-bar-1 .social-icons {
+  justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+  #footer-bar-1 .social-icons {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}
+
+#footer-bar-1 .copyrights-message,
+#footer-bar-1 .social-icons {
+  flex: 1;
+}
+
+/* Copyrights Message */
+.copyrights-message {
+  font-size: 18px;
+}
+
+@media (max-width: 480px) {
+  .copyrights-message {
+    font-size: 16px;
+  }
+}
+
+.copyrights-message a {
+  opacity: 1;
+  font-weight: 700;
+  color: #222;
+}
+
+.copyrights-message a:hover {
+  text-decoration: underline;
+  color: #05d561;
+}
+
+.text-white .copyrights-message {
+  color: #fff;
+}
+
+/* =====================================================================
+ *   helpers-placeholders.scss
+ * =================================================================== */
+/* BG Gradients */
+/* Opacity Values */
+
+/*# sourceMappingURL=sourcemaps/footer.css.map */

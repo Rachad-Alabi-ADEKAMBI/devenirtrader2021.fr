@@ -1,0 +1,188 @@
+/* =====================================================================
+ *   helpers-placeholders.scss
+ * =================================================================== */
+/* BG Gradients */
+/* Opacity Values */
+/**
+  * -------------------------------------------------------------------------------
+  * ( 03 ) - Header
+  * -------------------------------------------------------------------------------
+  *
+  *  This part contains logo, main menu and header bars.
+  *
+  * ------
+  *
+  *  Header is divided to the following sections:
+  *
+  *    |
+  *    |-->  [ 01 ] - Logo
+  *    |-->  [ 02 ] - Menu Main
+  *    |-->  [ 03 ] - Header Bars
+  *
+  */
+#header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/*  [ 01 ] - Logo
+=================== */
+.logo {
+  display: inline-block;
+}
+
+.logo img {
+  max-height: 100%;
+}
+
+.logo h3,
+.logo h3 + span {
+  display: none;
+}
+
+.logo.text-white h3,
+.logo.text-white span {
+  color: #fff;
+}
+
+.logo.logo-text img {
+  display: none;
+}
+
+.logo.logo-text h3,
+.logo.logo-text h3 + span {
+  display: block;
+}
+
+.logo.logo-text h3 {
+  position: relative;
+  margin-bottom: -1px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.logo.logo-text h3 + span {
+  font-size: 11px;
+  color: #888;
+}
+
+.logo-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 43px;
+  margin-left: 20px;
+  transition: color 0.2996s, top 0.3s;
+}
+
+@media (max-width: 480px) {
+  .logo-header {
+    height: 35px;
+  }
+}
+
+.logo-header.logo-text {
+  text-align: left;
+}
+
+/*  [ 03 ] - Header Bars
+========================== */
+/* Header Bar */
+.header-bar,
+.header-bar-wrap {
+  background: transparent;
+  transition: height 0.3s, background 0.3s;
+}
+
+.header-bar-wrap {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.header-bar .container,
+.header-bar .row,
+.header-bar [class*="col-"] {
+  height: 100%;
+}
+
+.header-bar .col-md-12 {
+  width: 100%;
+}
+
+.header-bar .hb-content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  transition: all 0.2s;
+}
+
+/* Header Bar 1 */
+#header-bar-1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+#header-bar-1 .hb-content {
+  margin-left: auto;
+}
+
+#header-bar-1,
+#header-bar-1 .header-bar-wrap {
+  height: 110px;
+}
+
+#header-bar-1 .header-bar-wrap {
+  z-index: 1;
+}
+
+#header-bar-1.is-sticky,
+#header-bar-1.is-sticky .header-bar-wrap {
+  height: 90px;
+}
+
+@media (max-width: 480px) {
+  #header-bar-1.is-sticky,
+  #header-bar-1.is-sticky .header-bar-wrap {
+    height: auto;
+  }
+}
+
+#header-bar-1.is-sticky .header-bar-wrap {
+  background-color: #222;
+}
+
+@media (max-width: 480px) {
+  #header-bar-1.is-sticky .hb-content {
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  #header-bar-1,
+  #header-bar-1 .header-bar-wrap {
+    height: auto;
+  }
+  #header-bar-1 .hb-content {
+    padding: 30px 0;
+  }
+  #header-bar-1 .logo-header {
+    margin: 0;
+  }
+}
+
+/* =====================================================================
+ *   helpers-placeholders.scss
+ * =================================================================== */
+/* BG Gradients */
+/* Opacity Values */
+
+/*# sourceMappingURL=sourcemaps/header.css.map */
