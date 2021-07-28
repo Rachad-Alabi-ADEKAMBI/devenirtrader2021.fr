@@ -1,2 +1,2 @@
 # devenirtrader2021.fr
-a landing page with Html Sss & Js
+a landing page with Html Css & Js
